@@ -14,11 +14,15 @@ namespace tiandalinea.Models
         public string Contrasena { set; get; }
 
 
-        public usuariocs(string plogin, string pcontrasena)
+        public usuariocs(string pLogin, string pContrasena)
         {
-            login = pcontrasena;
-            
-
+            login = pLogin;
+            contrasena = pContrasena;         
+        }
+        public usuariocs()
+        {
+            login = "";
+            contrasena = "";
         }
 
 
