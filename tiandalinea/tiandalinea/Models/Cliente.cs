@@ -7,6 +7,7 @@ namespace tiandalinea.Models
 {
     public class Cliente
     {
+        private string cedula;
         private string nombre;
         private string apellido;
         private string direccion;
@@ -18,7 +19,7 @@ namespace tiandalinea.Models
         private string tipoId;
         private string email;
 
-
+        public string Cedula { set; get; }
         public string Nombre { set; get; }
         public string Apellido { get; set; }
         public string Direccion { get; set; }
@@ -30,15 +31,35 @@ namespace tiandalinea.Models
         public string TipoId { get; set; }
         public string Email { get; set; }
 
-       public Cliente( string pnombre, string papellido, string pdireccion, string pciudad, string pdepartamento, 
-                    string ptelefono, DateTime pfecharegistro, string pcodigocuenta, string ptipoid, string Email)
+       public Cliente( string pCedula, string pNombre, string pApellido, string pDireccion, string pCiudad, string pDepartamento, 
+                    string pTelefono, DateTime pFecharegistro, string pCodigocuenta, string pTipoid, string pEmail)
         {
-            pnombre = nombre;
-            papellido = apellido;
-            pdireccion = direccion;
-            pciudad = ciudad;
-            pdepartamento = departamento;
+            pCedula = cedula;
+            pNombre = nombre;
+            pApellido = apellido;
+            pDireccion = direccion;
+            pCiudad = ciudad;
+            pDepartamento = departamento;
+            pTelefono = telefeno;
+            pFecharegistro = fechaRegistro;
+            pCodigocuenta = codigoCuenta;
+            pTipoid = tipoId;
+            pEmail = email;
             
+        }
+
+        public Cliente()
+        {
+            cedula = "";
+            nombre = "";
+            apellido = "";
+            direccion = "";
+            ciudad = "";
+            departamento = "";
+            telefeno = "";
+            codigoCuenta = "";
+            tipoId = "";
+            email = "";
         }
 
 
