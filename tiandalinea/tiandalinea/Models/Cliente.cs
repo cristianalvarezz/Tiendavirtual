@@ -30,10 +30,15 @@ namespace tiandalinea.Models
         public string TipoId { get; set; }
         public string Email { get; set; }
 
-       public Cliente ( string pnombre, string papellido, string pdireccion, string pciudad, string pdepartamento, 
+       public Cliente( string pnombre, string papellido, string pdireccion, string pciudad, string pdepartamento, 
                     string ptelefono, DateTime pfecharegistro, string pcodigocuenta, string ptipoid, string Email)
         {
-
+            pnombre = nombre;
+            papellido = apellido;
+            pdireccion = direccion;
+            pciudad = ciudad;
+            pdepartamento = departamento;
+            
         }
 
 
