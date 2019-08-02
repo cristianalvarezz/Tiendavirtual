@@ -34,17 +34,17 @@ namespace tiandalinea.Models
        public Cliente( string pCedula, string pNombre, string pApellido, string pDireccion, string pCiudad, string pDepartamento, 
                     string pTelefono, DateTime pFecharegistro, string pCodigocuenta, string pTipoid, string pEmail)
         {
-            pCedula = cedula;
-            pNombre = nombre;
-            pApellido = apellido;
-            pDireccion = direccion;
-            pCiudad = ciudad;
-            pDepartamento = departamento;
-            pTelefono = telefeno;
-            pFecharegistro = fechaRegistro;
-            pCodigocuenta = codigoCuenta;
-            pTipoid = tipoId;
-            pEmail = email;
+            cedula = pCedula;
+            nombre = pNombre;
+            apellido = pApellido;
+            direccion = pDireccion;
+            ciudad = pCiudad;
+            departamento = pDepartamento;
+            telefeno = pTelefono;
+            fechaRegistro = pFecharegistro;
+            codigoCuenta = pCodigocuenta;
+            tipoId = pTipoid;
+            email = pEmail;
             
         }
 

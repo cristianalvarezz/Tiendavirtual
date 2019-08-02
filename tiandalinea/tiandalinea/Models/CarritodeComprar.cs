@@ -8,9 +8,23 @@ namespace tiandalinea.Models
     public class CarritodeComprar
     {
         private string idCarrito;
-        private string suTotal;
+        private int suTotal;
 
         public string IdCarrito { set; get; }
-        public string SuTotal { set; get; }
+        public int SuTotal { set; get; }
+
+        public CarritodeComprar( string pIdcarrito, int pSutotal)
+        {
+            idCarrito = pIdcarrito;
+            suTotal = pSutotal;
+        }
+
+        public CarritodeComprar()
+        {
+            idCarrito = "";
+            suTotal = 0;
+        }
     }
+
+  
 }
