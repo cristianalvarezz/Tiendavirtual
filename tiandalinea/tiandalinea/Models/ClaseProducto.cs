@@ -11,17 +11,17 @@ namespace tiandalinea.Models
         private string idProducto;
         private string imagen;
         private string nombre;
-        private string precioUnitario;
+        private int precioUnitario;
         private bool suspendido;
 
         public string Descripcion { set; get; } 
         public string IdProducto { set; get; }
         public string Imagen { set; get; }
         public string Nombre { set; get; }
-        public string PrecioUnitario { set; get; }
+        public int PrecioUnitario { set; get; }
         public bool Suspendido { set; get; }
 
-        public ClaseProducto( string pDescripcion, string pIdProducto, string  pImagen, string pNombre, string pPrecioUnitario,
+        public ClaseProducto( string pDescripcion, string pIdProducto, string  pImagen, string pNombre, int pPrecioUnitario,
                             bool pSuspendido)
         {
             descripcion = pDescripcion;
@@ -31,6 +31,16 @@ namespace tiandalinea.Models
             precioUnitario = pPrecioUnitario;
             suspendido = pSuspendido;
 
+        }
+
+        public ClaseProducto()
+        {
+            descripcion = "";
+            idProducto = "";
+            imagen = "";
+            nombre = "";
+            precioUnitario = 0;
+            suspendido = false;
         }
     }
 }
